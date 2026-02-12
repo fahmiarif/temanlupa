@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PSM | 1 Day 1 New Behaviour</title>
+  <meta name="description" content="Gamified workplace behavior tracking - Teman Lupa. Rapikan dulu, baru kerja!">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mascot-css.css">
+</head>
+
+<body>
+  <div class="app-container">
+    <!-- ==================== MAIN SCREEN ==================== -->
+    <div class="main-screen" id="mainScreen">
+
+      <!-- HEADER -->
+      <header class="app-header">
+        <div class="header-left">
+          <span class="header-logo">PSM</span>
+          <span class="header-divider">|</span>
+          <span class="header-title">1 Day 1 New Behaviour</span>
+        </div>
+        <div class="header-icons">
+          <button class="icon-btn" aria-label="Messages">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="#fff"
+                stroke-width="2" />
+              <polyline points="22,6 12,13 2,6" stroke="#fff" stroke-width="2" />
+            </svg>
+            <span class="badge">2</span>
+          </button>
+          <button class="icon-btn" aria-label="Notifications">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" stroke="#fff" stroke-width="2" />
+              <path d="M13.73 21a2 2 0 0 1-3.46 0" stroke="#fff" stroke-width="2" />
+            </svg>
+            <span class="badge">5</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- DATE -->
+      <div class="date-bar">
+        <span class="date-icon">📅</span>
+        <span class="date-text">Kamis, 12 Februari 2026</span>
+      </div>
+
+      <!-- CHALLENGE CARD -->
+      <div class="challenge-card">
+        <div class="challenge-card-inner">
+          <div class="challenge-header">
+            <div class="challenge-title">
+              <h1>Day 2 – Kabel Rapi</h1>
+              <p class="challenge-date">12 Februari</p>
+            </div>
+            <div class="challenge-mascot">
+              <div class="mascot-orange">
+                <div class="mascot-orange-face">
+                  <div class="mascot-eyes">
+                    <div class="eye"></div>
+                    <div class="eye"></div>
+                  </div>
+                  <div class="mouth happy"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="challenge-checklist">
+            <div class="check-item completed">
+              <span class="check-icon">✅</span>
+              <span class="check-label">KURSI RAPI</span>
+              <span class="check-done">✔</span>
+            </div>
+            <div class="check-item completed">
+              <span class="check-icon">✅</span>
+              <span class="check-label">KABEL RAPI</span>
+              <span class="check-done">✔</span>
+            </div>
+          </div>
+        </div>
+        <!-- Building silhouette decoration -->
+        <div class="buildings-deco"></div>
+      </div>
+
+      <!-- SPOTTING BANNER -->
+      <div class="spotting-banner" id="btnOpenSpotModal">
+        <div class="spotting-content">
+          <div class="spotting-eyes">👀</div>
+          <div class="spotting-text">
+            <h2>SPOTTING <span>Teman Lupa</span></h2>
+          </div>
+        </div>
+        <p class="spotting-tagline">Rapikan dulu. Baru kerja!</p>
+        <div class="spotting-mascot">
+          <div class="spotting-mascot-wrapper">
+            <div class="mascot-blue waving">
+              <div class="mascot-blue-face">
+                <div class="mascot-eyes">
+                  <div class="eye"></div>
+                  <div class="eye"></div>
+                </div>
+                <div class="mascot-mouth"></div>
+              </div>
+              <div class="mascot-hand"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SCORE SECTION -->
+      <div class="score-section">
+        <div class="score-card">
+          <div class="score-icon">⭐</div>
+          <div class="score-label">Skor Saya</div>
+          <div class="score-value blue">+2</div>
+        </div>
+        <div class="score-card">
+          <div class="score-icon">🔥</div>
+          <div class="score-label">Streak</div>
+          <div class="score-value orange">2 <small>Hari Berturut</small></div>
+        </div>
+        <div class="score-card">
+          <div class="score-label">Kepatuhan</div>
+          <div class="score-value big">80%</div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 80%"></div>
+          </div>
+          <div class="target-text">Target 90%</div>
+        </div>
+      </div>
+
+      <!-- GAME SECTION -->
+      <div class="game-section">
+        <div class="game-header">
+          <span class="game-star">⭐</span>
+          <h3>Game: Spot & Care</h3>
+          <div class="mascot-blue" style="transform: scale(0.6);">
+            <div class="mascot-blue-face">
+              <div class="mascot-eyes">
+                <div class="eye"></div>
+                <div class="eye"></div>
+              </div>
+              <div class="mascot-mouth"></div>
+            </div>
+          </div>
+        </div>
+        <div class="game-tasks">
+          <div class="game-task">
+            <span class="task-emoji">👀</span>
+            <span class="task-text">Muat i Teman Lupa</span>
+            <span class="task-points">+1</span>
+            <span class="task-check done">✅</span>
+          </div>
+          <div class="game-task">
+            <span class="task-emoji">😊</span>
+            <span class="task-text">Kirim Spot!</span>
+            <span class="task-points">+1</span>
+            <span class="task-check done">✅</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- LEADERBOARD -->
+      <div class="leaderboard-section">
+        <div class="leaderboard-header">
+          <h3>Leaderboard Hari Ini</h3>
+          <div class="leaderboard-mascot">🏆</div>
+        </div>
+        <div class="leaderboard-list">
+          <div class="leaderboard-item rank-1">
+            <span class="rank">#1</span>
+            <div class="avatar-3d avatar-ayu">
+              <div class="avatar-face"></div>
+            </div>
+            <span class="player-name">Ayu</span>
+            <span class="player-score">+5</span>
+            <span class="trophy">🏆</span>
+            <span class="item-check">✅</span>
+          </div>
+          <div class="leaderboard-item rank-2">
+            <span class="rank">#2</span>
+            <div class="avatar-3d avatar-dimas">
+              <div class="avatar-face"></div>
+            </div>
+            <span class="player-name">Dimas</span>
+            <span class="player-score">+3</span>
+            <span class="item-check">✅</span>
+          </div>
+          <div class="leaderboard-item rank-3">
+            <span class="rank">#3</span>
+            <div class="avatar-3d avatar-budi">
+              <div class="avatar-face"></div>
+            </div>
+            <span class="player-name">Budi</span>
+            <span class="player-score">+3</span>
+            <span class="item-check green">✅</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACHIEVEMENTS -->
+      <div class="achievements-section">
+        <div class="achievement-badge">
+          <div class="badge-3d badge-streak7"></div>
+          <div class="badge-label">Streak 7 Hari<br><strong>Hero Kemandirian</strong></div>
+        </div>
+        <div class="achievement-badge">
+          <div class="badge-3d badge-streak30"></div>
+          <div class="badge-label">Streak 30 Hari<br><strong>Master Mandiri</strong></div>
+        </div>
+        <div class="achievement-badge">
+          <div class="badge-3d badge-juara">
+            <div class="badge-cup"></div>
+          </div>
+          <div class="badge-label">Juara Mingguan<br><strong>Pulang 1 Jam Blh Awal</strong></div>
+        </div>
+      </div>
+
+      <!-- EARLY LEAVE PASS -->
+      <div class="early-leave-pass" id="earlyLeavePass">
+        <div class="ticket-3d">
+          <span class="ticket-star">★</span>
+        </div>
+        <div class="pass-content">
+          <h4>Early Leave Pass</h4>
+          <p class="pass-time">Pulang 16:00 WIB</p>
+          <p class="pass-congrats">Congratulations!<br>Enjoy your Early Leave!</p>
+        </div>
+        <button class="btn-print" id="btnPrint">PRINT PS!</button>
+        <button class="pass-close" id="btnClosePass">✕</button>
+      </div>
+
+      <!-- CHAT BUBBLES -->
+      <div class="chat-bubbles">
+        <div class="chat-bubble bubble-right">
+          <div class="mascot-blue" style="transform: scale(0.6);">
+            <div class="mascot-blue-face">
+              <div class="mascot-eyes">
+                <div class="eye"></div>
+                <div class="eye"></div>
+              </div>
+              <div class="mascot-mouth"></div>
+            </div>
+          </div>
+          <div class="bubble-text">Nice! Kursimu sudah rapi!</div>
+        </div>
+        <div class="chat-bubble bubble-right">
+          <div class="mascot-blue" style="transform: scale(0.6);">
+            <div class="mascot-blue-face">
+              <div class="mascot-eyes">
+                <div class="eye"></div>
+                <div class="eye"></div>
+              </div>
+              <div class="mascot-mouth"></div>
+            </div>
+          </div>
+          <div class="bubble-text">Mantap! Kabel digulung rapi!</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== MODAL: SPOT TEMAN LUPA ==================== -->
+    <div class="modal-overlay" id="spotModal">
+      <div class="modal-container">
+        <div class="modal-header">
+          <button class="modal-back" id="btnBackSpot">‹</button>
+          <h3>Spot Teman Lupa</h3>
+          <button class="modal-close" id="btnCloseSpot">✕</button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label>Pilih Teman:</label>
+            <div class="select-wrapper">
+              <select id="selectTeman">
+                <option value="raka">Raka</option>
+                <option value="ayu">Ayu</option>
+                <option value="dimas">Dimas</option>
+                <option value="budi">Budi</option>
+              </select>
+              <span class="select-arrow">▾</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Jenis Lupa:</label>
+            <div class="select-wrapper">
+              <select id="selectJenis">
+                <option value="kursi">Kursi Berantakan</option>
+                <option value="kabel">Kabel Berantakan</option>
+                <option value="meja">Meja Berantakan</option>
+              </select>
+              <span class="select-arrow">▾</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Catatan (Opsional):</label>
+            <input type="text" id="inputCatatan" placeholder="Jam 10.15, ruang rapat" class="form-input">
+          </div>
+          <button class="btn-spot" id="btnKirimSpot">
+            Kirim Spot! <span class="btn-points">+1</span>
+          </button>
+          <div class="rules-section">
+            <h4>Rules:</h4>
+            <ul>
+              <li>Lupa: <strong>-1</strong></li>
+              <li>Spotting teman: <strong>+1</strong></li>
+              <li>Max spotting per hari: <strong>3</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== MODAL: RAKA KETAHUAN ==================== -->
+    <div class="modal-overlay" id="ketahuanModal">
+      <div class="modal-container">
+        <div class="modal-header">
+          <button class="modal-back" id="btnBackKetahuan">‹</button>
+          <h3>Raka Ketahuan!</h3>
+          <button class="modal-close" id="btnCloseKetahuan">✕</button>
+        </div>
+        <div class="modal-body">
+          <div class="ketahuan-illustration">
+            <div class="ketahuan-scene">
+              <div class="chair-messy"></div>
+              <div class="mascot-sad">
+                <div class="mascot-blue-face">
+                  <div class="mascot-eyes">
+                    <div class="eye"></div>
+                    <div class="eye"></div>
+                  </div>
+                  <div class="mascot-mouth"></div>
+                  <div class="sweat">💧</div>
+                </div>
+                <span class="minus-one">-1</span>
+              </div>
+            </div>
+          </div>
+          <div class="ketahuan-detail">
+            <span class="detail-check">✅</span>
+            <strong>Kursi Berantakan</strong>
+          </div>
+          <div class="ketahuan-info">
+            <p>Jam 10.15, ruang rapat</p>
+          </div>
+          <button class="btn-ok-spot" id="btnOkSpot">
+            OK, Spot! <span class="btn-points">+1</span>
+          </button>
+          <div class="rules-section">
+            <h4>Rules:</h4>
+            <ul>
+              <li>Lupa: <strong>-1</strong></li>
+              <li>Spotting teman: <strong>+1</strong></li>
+              <li>Max spotting per hari: <strong>3</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== SUCCESS TOAST ==================== -->
+    <div class="toast-container" id="toast">
+      <div class="toast-content">
+        <span class="toast-icon">🎉</span>
+        <span class="toast-text">Spot berhasil dikirim!</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

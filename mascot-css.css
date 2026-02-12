@@ -1,0 +1,441 @@
+/* ============================================
+   PSM | CSS Mascots & Illustrations
+   "Nano Banana" Style - Cute, 3D-like, Vibrant
+   ============================================ */
+
+/* --- Common --- */
+.mascot-3d {
+    position: relative;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    /* Reset font for faces */
+}
+
+/* --- Blue Round Mascot (Main) --- */
+.mascot-blue {
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(circle at 30% 30%, #60a5fa, #2563eb);
+    border-radius: 50%;
+    box-shadow:
+        inset -4px -4px 8px rgba(0, 0, 0, 0.2),
+        inset 4px 4px 8px rgba(255, 255, 255, 0.4),
+        0 4px 8px rgba(37, 99, 235, 0.4);
+    position: relative;
+}
+
+.mascot-blue-face {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+}
+
+.mascot-eyes {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.eye {
+    width: 8px;
+    height: 12px;
+    background: #1e3a8a;
+    border-radius: 50%;
+    position: relative;
+}
+
+.eye::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 3px;
+    height: 3px;
+    background: white;
+    border-radius: 50%;
+}
+
+.mascot-mouth {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 6px;
+    border-bottom: 2px solid #1e3a8a;
+    border-radius: 0 0 50% 50%;
+}
+
+.mascot-blue.waving .mascot-hand {
+    position: absolute;
+    top: 40%;
+    right: -5px;
+    width: 12px;
+    height: 12px;
+    background: #60a5fa;
+    border-radius: 50%;
+    box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.1);
+    animation: waveHand 1s infinite alternate;
+    transform-origin: bottom left;
+}
+
+@keyframes waveHand {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(20deg) translateY(-2px);
+    }
+}
+
+/* --- Orange Box Mascot (Chair/Screen) --- */
+.mascot-orange {
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle at 30% 30%, #fbbf24, #d97706);
+    border-radius: 12px;
+    box-shadow:
+        inset -3px -3px 6px rgba(0, 0, 0, 0.2),
+        inset 3px 3px 6px rgba(255, 255, 255, 0.5),
+        0 4px 8px rgba(217, 119, 6, 0.3);
+    position: relative;
+}
+
+.mascot-orange-face {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mascot-orange .eye {
+    background: #78350f;
+    width: 6px;
+    height: 8px;
+}
+
+.mascot-orange .mouth.happy {
+    width: 10px;
+    height: 8px;
+    background: #78350f;
+    border-radius: 0 0 10px 10px;
+    margin-top: 4px;
+    overflow: hidden;
+}
+
+.mascot-orange .mouth.happy::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 4px;
+    background: #ef4444;
+    margin: 4px auto 0;
+    border-radius: 50% 50% 0 0;
+}
+
+/* --- Avatars --- */
+.avatar-3d {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-face {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.avatar-face::before {
+    /* Hair */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 14px;
+    background: #1f2937;
+    border-radius: 50% 50% 0 0;
+    z-index: 2;
+}
+
+.avatar-face::after {
+    /* Skin */
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    background: #fca5a5;
+    /* default skin */
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Specific Avatars */
+.avatar-ayu .avatar-face::after {
+    background: #fecaca;
+}
+
+.avatar-ayu .avatar-face::before {
+    background: #4b5563;
+    border-radius: 50% 0 50% 0;
+    height: 18px;
+}
+
+.avatar-dimas .avatar-face::after {
+    background: #fde68a;
+}
+
+.avatar-dimas .avatar-face::before {
+    background: #1e40af;
+}
+
+/* Blue hair/hat */
+
+.avatar-budi .avatar-face::after {
+    background: #ffedd5;
+}
+
+.avatar-budi .avatar-face::before {
+    height: 8px;
+    background: #000;
+}
+
+/* --- Badges --- */
+.badge-3d {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 5px;
+    position: relative;
+}
+
+.badge-streak7 {
+    background: radial-gradient(circle at 30% 30%, #fcd34d, #d97706);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.badge-streak7::after {
+    content: '7';
+    color: #78350f;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.badge-streak30 {
+    background: radial-gradient(circle at 30% 30%, #fbbf24, #b45309);
+    border-radius: 50%;
+    border: 3px solid #fef3c7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.badge-streak30::after {
+    content: '30';
+    color: #fff;
+    font-weight: 900;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.badge-juara {
+    position: relative;
+}
+
+.badge-cup {
+    width: 24px;
+    height: 16px;
+    background: #fbbf24;
+    border-radius: 0 0 12px 12px;
+    margin: 8px auto 0;
+    position: relative;
+}
+
+.badge-cup::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -2px;
+    right: -2px;
+    height: 6px;
+    background: #fcd34d;
+    border-radius: 2px;
+}
+
+.badge-cup::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 8px;
+    width: 8px;
+    height: 4px;
+    background: #b45309;
+}
+
+/* --- Early Leave Ticket --- */
+.ticket-3d {
+    width: 48px;
+    height: 32px;
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    border-radius: 4px;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ticket-3d::before,
+.ticket-3d::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #d4f5e9;
+    /* Match bg of container */
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ticket-3d::before {
+    left: -4px;
+}
+
+.ticket-3d::after {
+    right: -4px;
+}
+
+.ticket-star {
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* --- Scene Ketahuan --- */
+.scene-ketahuan {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.chair-messy {
+    width: 40px;
+    height: 40px;
+    background: #fbbf24;
+    border-radius: 8px;
+    position: relative;
+    transform: rotate(-10deg);
+    margin-right: 18px;
+}
+
+.chair-messy::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    width: 4px;
+    height: 20px;
+    background: #555;
+    transform: translateX(-50%);
+}
+
+.chair-messy::before {
+    /* Wheels */
+    content: '';
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    width: 24px;
+    height: 4px;
+    background: #555;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.mascot-sad {
+    width: 45px;
+    height: 45px;
+    background: radial-gradient(circle at 30% 30%, #60a5fa, #2563eb);
+    border-radius: 50%;
+    position: relative;
+}
+
+.mascot-sad .eye {
+    top: 40%;
+    height: 4px;
+    width: 6px;
+    border-radius: 2px;
+}
+
+.mascot-sad .mouth {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 4px;
+    border-top: 2px solid #1e3a8a;
+    border-radius: 50% 50% 0 0;
+}
+
+.mascot-sad .sweat {
+    position: absolute;
+    top: 20%;
+    right: 5px;
+    color: #93c5fd;
+    font-size: 10px;
+}
+
+/* --- Spotting Banner Specific --- */
+.spotting-mascot-wrapper {
+    transform: scale(1.5);
+    transform-origin: bottom right;
+}
+
+/* --- Game Tasks --- */
+.task-icon-3d {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+
+/* --- Building Silhouette (refinement) --- */
+.buildings-deco {
+    background:
+        linear-gradient(to right,
+            transparent 0%,
+            rgba(255, 255, 255, 0.1) 10%,
+            rgba(255, 255, 255, 0.1) 15%,
+            transparent 15%,
+            transparent 25%,
+            rgba(255, 255, 255, 0.15) 25%,
+            rgba(255, 255, 255, 0.15) 40%,
+            transparent 40%) !important;
+}
